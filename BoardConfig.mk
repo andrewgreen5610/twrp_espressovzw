@@ -47,9 +47,17 @@ TARGET_USE_CUSTOM_LUN_FILE_PATH := /sys/devices/platform/msm_hsusb/gadget/lun%d/
 
 # Charge mode
 BOARD_CHARGING_MODE_BOOTING_LPM := /sys/class/power_supply/battery/batt_lp_charging
+BOARD_BATTERY_DEVICE_NAME := "battery"
 
 # chargers
 BOARD_CHARGER_RES := device/samsung/espressovzw/charger
+
+# Override healthd HAL
+BOARD_HAL_STATIC_LIBRARIES := libhealthd.qcom
+
+# Recovery
+BOARD_CUSTOM_RECOVERY_KEYMAPPING := ../../device/samsung/espressovzw/recovery/recovery_keys.c
+TARGET_RECOVERY_FSTAB := device/samsung/espressovzw/recovery.fstab
 
 # TWRP
 DEVICE_RESOLUTION := 1024x600

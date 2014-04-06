@@ -14,14 +14,13 @@ else
 	LOCAL_KERNEL := $(TARGET_PREBUILT_KERNEL)
 endif
 
+# Charger
+PRODUCT_PACKAGES += charger charger_res_images
+
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/recovery/lpm.rc:recovery/root/lpm.rc \
     $(LOCAL_PATH)/recovery/init.recovery.qcom.rc:root/init.recovery.qcom.rc \
-    $(LOCAL_PATH)/recovery/choice_fn:recovery/root/sbin/choice_fn \
-    $(LOCAL_PATH)/recovery/power_test:recovery/root/sbin/power_test \
-    $(LOCAL_PATH)/recovery/offmode_charging:recovery/root/sbin/offmode_charging \
-    $(LOCAL_PATH)/recovery/detect_key:recovery/root/sbin/detect_key \
-    $(LOCAL_PATH)/recovery/fstab.qcom:recovery/root/fstab.qcom
+    $(LOCAL_PATH)/recovery/init.qcom.lpm_post.sh:recovery/root/sbin/init.qcom.lpm_post.sh \
 
 $(call inherit-product, build/target/product/full.mk)
 
