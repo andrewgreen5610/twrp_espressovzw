@@ -5,7 +5,7 @@ PRODUCT_RELEASE_NAME := espressovzw
 $(call inherit-product, vendor/cm/config/common_full_phone.mk)
 
 # Inherit device configuration
-$(call inherit-product, device/samsung/espressovzw/device_espressovzw.mk)
+$(call inherit-product, device/samsung/espressovzw/device.mk)
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := espressovzw

@@ -26,7 +26,7 @@ TARGET_USE_KRAIT_BIONIC_OPTIMIZATION := true
 BOARD_KERNEL_CMDLINE := androidboot.hardware=qcom user_debug=31
 BOARD_KERNEL_BASE := 0x80200000
 BOARD_KERNEL_PAGESIZE := 2048
-TARGET_KERNEL_CONFIG := espressovzw_defconfig
+TARGET_KERNEL_CONFIG := espresso_vzw_defconfig
 TARGET_KERNEL_SOURCE := kernel/samsung/espressovzw
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x01300000
 

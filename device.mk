@@ -20,7 +20,7 @@ PRODUCT_PACKAGES += charger charger_res_images
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/recovery/lpm.rc:recovery/root/lpm.rc \
     $(LOCAL_PATH)/recovery/init.recovery.qcom.rc:root/init.recovery.qcom.rc \
-    $(LOCAL_PATH)/recovery/init.qcom.lpm_post.sh:recovery/root/sbin/init.qcom.lpm_post.sh \
+    $(LOCAL_PATH)/recovery/init.qcom.lpm_boot.sh:recovery/root/init.qcom.lpm_boot.sh
 
 $(call inherit-product, build/target/product/full.mk)
 
